@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="dvmenu" class="dvdisplay"> <!--Criando um botão que vai ser responsavel pela questão da ativação da função iniciar , dando inicio a forca.-->
+        <input type="button" value="Nova Palavra" onclick="inicia()"> 
+    </div>
+    <div id="dvplavra" class="dvdisplay"> <!--Aqui tem uma segunda div que contem o numero de letras e esse numero de letras limite é 20. Note que é um input do tipo texto que tem tamanho maximo de 1 , e todos tem um id relativo ao seu numero de letra. Conforme a palavra tenha o numero de letras ele mostra o numero de input relacionado a isso e isso é gerenciado no nosso javascript-->
+        <input type="text" id="letra0" class="letra" maxlength="1">
+        <input type="text" id="letra1" class="letra" maxlength="1">
+        <input type="text" id="letra2" class="letra" maxlength="1">
+        <input type="text" id="letra3" class="letra" maxlength="1">
+        <input type="text" id="letra4" class="letra" maxlength="1">
+        <input type="text" id="letra5" class="letra" maxlength="1">
+        <input type="text" id="letra6" class="letra" maxlength="1">
+        <input type="text" id="letra7" class="letra" maxlength="1">
+        <input type="text" id="letra8" class="letra" maxlength="1">
+        <input type="text" id="letra9" class="letra" maxlength="1">
+        <input type="text" id="letra10" class="letra" maxlength="1">
+        <input type="text" id="letra11" class="letra" maxlength="1">
+        <input type="text" id="letra12" class="letra" maxlength="1">
+        <input type="text" id="letra13" class="letra" maxlength="1">
+        <input type="text" id="letra14" class="letra" maxlength="1">
+        <input type="text" id="letra15" class="letra" maxlength="1">
+        <input type="text" id="letra16" class="letra" maxlength="1">
+        <input type="text" id="letra17" class="letra" maxlength="1">
+        <input type="text" id="letra18" class="letra" maxlength="1">
+        <input type="text" id="letra19" class="letra" maxlength="1">
+    </div>
+    <div id="dvjogador" class="dvdisplay"><!--Div responsavel pelos elementos do jogo , onde tem um input de texto que mostra a letra que o jogador vai digitar , tem o botão de jogar , onde o jogador vai digitar a letra e selecionar jogar para ele chamar a função jogar e manda a letra para o inout.O dica é para mostra a palavra.-->
+        <div id="controlesJogador">
+            <input type="text" id="letraJ" class="letraJ" maxlength="1">
+            <input type="button" value="Jogar" onclick="jogar()">
+            <input type="button" value="Dica" onclick="dica()">
+            <div id="dvmsg"></div><br><!--Div que será responsavel por mostra se eu ganhei ou perdi.-->
+            <div id="dvletrasdigitadas">Letras Digitadas</div><!--Div para mostra a questão das letras que eu for colocando.-->
+        </div>
+    </div>
+    <div id="dvForca"><!--Div com imagem da forca relacionado a cada parte , será gerenciada de acordo com os erros , controlando em nosso javaScript-->
+        <img id="cabeca" src="cabeca1.png">
+        <img id="corpo" src="corpo.png">
+        <img id="bracoE" src="bracoE.png">
+        <img id="bracoD" src="bracoD.png">
+        <img id="pernaE" src="pernaE.png">
+        <img id="pernaD" src="pernaD.png">
+    </div>
+   <script src="script.js"></script>
+
+</body>
+</html>

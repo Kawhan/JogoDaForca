@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+
+.letra{ /*Formatação do quadrante onde vai fica a questão de cada letra*/
+    width: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+    display: none;
+}
+
+.letraJ{ /*FOrmatação da letra que vai ser colocada no nosso quadrante em questão de meio que selecionar ela na nossa palavra.*/
+    width: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px;
+}
+
+#dvdisplay{
+    display: block;
+}
+ /*Formatação de cada imagem pre-selecionando em qual quadrante cada um vai fica , assim quando jogador for errando ele vai selecionando a questão de cada imagem relativo ao erro.*/
+#dvForca{
+    position: absolute;
+    left: 150px;
+}
+
+#cabeca{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#corpo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#bracoE{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#bracoD{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#pernaE{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#pernaD{
+    position: absolute;
+    left: 0px;
+    left: 0px;
+}
+
